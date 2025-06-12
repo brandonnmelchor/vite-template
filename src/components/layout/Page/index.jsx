@@ -8,6 +8,7 @@ const Page = ({ children }) => {
 		<>
 			<Navbar />
 			{children}
+			<Outlet />
 			<Footer />
 		</>
 	)

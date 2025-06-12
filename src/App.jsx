@@ -1,25 +1,8 @@
-import Page from '@/components/layout/Page'
-import Home from '@/views/User/Home'
+import { RouterProvider } from 'react-router-dom'
+import router from './utils/router'
 
 const App = () => {
-	return (
-		<Page>
-			<Home />
-		</Page>
-	)
+	return <RouterProvider router={router} />
 }
-
-// import { RouterProvider } from 'react-router-dom'
-
-// import GlobalProvider from '@/components/GlobalProvider'
-// import router from '@/router'
-
-// ReactDOM.createRoot(document.getElementById('root')!).render(
-//   <React.StrictMode>
-//     <GlobalProvider>
-//       <RouterProvider router={router} />
-//     </GlobalProvider>
-//   </React.StrictMode>,
-// )
 
 export default App
