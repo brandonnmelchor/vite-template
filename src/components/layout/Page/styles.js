@@ -1,9 +1,3 @@
-const styles = {
-	pageWrapper: {
-		height: '100vh',
-		justifyContent: 'center',
-		alignItems: 'center'
-	}
-}
+const styles = {}
 
 export default styles

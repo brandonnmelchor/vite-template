@@ -4,7 +4,7 @@ import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
-import './main.css'
+import './main.scss'
 
 createRoot(document.getElementById('root')).render(
 	<StrictMode>

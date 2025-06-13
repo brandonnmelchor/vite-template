@@ -4,12 +4,11 @@ import styles from './styles'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 
-const Page = ({ children }) => {
+const Page = () => {
 	return (
-		<Stack style={styles.pageWrapper}>
+		<Stack className='vw-100 vh-100'>
 			<Navbar />
-			{children}
-			<Outlet />
+			{/* <Outlet /> */}
 			<Footer />
 		</Stack>
 	)
