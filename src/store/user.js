@@ -1,6 +1,6 @@
 import { create } from 'zustand'
 
-export const useUserStore = create((set, get, api) => {
+export const useUserStore = create(() => {
 	return {
 		id: null,
 		token: null,
