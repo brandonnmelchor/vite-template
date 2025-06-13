@@ -1,4 +1,4 @@
-import './styles.css'
+import styles from './styles'
 
 import reactLogo from '/logos/react.svg'
 import viteLogo from '/logos/vite.svg'
