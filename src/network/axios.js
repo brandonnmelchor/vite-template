@@ -1,31 +1,31 @@
-import axios from 'axios'
+import _axios from 'axios'
 
-class API {
+class Axios {
 	constructor() {
-		this.api = axios.create({
+		this.axios = _axios.create({
 			baseURL: import.meta.env.VITE_API_BASE_URL,
 			withCredentials: true,
 			timeout: 7500
 		})
 
-		this.api.interceptors.request.use(this.handleRequest, this.handleError)
-		this.api.interceptors.response.use(this.handleResponse, this.handleError)
+		this.axios.interceptors.request.use(this.handleRequest, this.handleError)
+		this.axios.interceptors.response.use(this.handleResponse, this.handleError)
 	}
 
 	get(request) {
-		return this.api({ method: 'GET', ...request })
+		return this.axios({ method: 'GET', ...request })
 	}
 
 	post(request) {
-		return this.api({ method: 'POST', ...request })
+		return this.axios({ method: 'POST', ...request })
 	}
 
 	patch(request) {
-		return this.api({ method: 'PATCH', ...request })
+		return this.axios({ method: 'PATCH', ...request })
 	}
 
 	delete(request) {
-		return this.api({ method: 'DELETE', ...request })
+		return this.axios({ method: 'DELETE', ...request })
 	}
 
 	upload(url, file, request) {
@@ -46,7 +46,7 @@ class API {
 			}
 		}
 
-		return this.api({ method: 'POST', url, data, headers })
+		return this.axios({ method: 'POST', url, data, headers })
 	}
 
 	handleRequest(request) {
@@ -62,5 +62,5 @@ class API {
 	}
 }
 
-const api = new API()
-export default api
+const axios = new Axios()
+export default axios
