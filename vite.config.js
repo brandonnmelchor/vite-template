@@ -16,9 +16,13 @@ export default ({ command, mode }) => {
 		mode: mode,
 
 		server: {
+			// bmelchor-note: sets dev server to http://localhost:8080/
+			port: 8080,
+
+			// bmelchor-note: proxy for backend dev server to bypass cors
 			proxy: {
 				'/api': {
-					target: 'http://localhost:5000', // bm-note: update as needed
+					target: 'http://localhost:5000/api',
 					changeOrigin: true,
 					rewrite: (path) => path.replace(/^\/api/, '')
 				}
