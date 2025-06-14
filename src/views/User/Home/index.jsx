@@ -1,7 +1,7 @@
 import styles from './styles'
 
 import reactLogo from '/logos/react.svg'
-import viteLogo from '/logos/vite.svg'
+import viteLogo from '/logos/react.svg'
 
 const Home = () => {
 	return (
@@ -16,7 +16,7 @@ const Home = () => {
 				</a>
 			</div>
 
-			<h1>Vite Template</h1>
+			<h1>Template</h1>
 			<p className='read-the-docs'>Click on the Vite and React logos to learn more</p>
 		</>
 	)
