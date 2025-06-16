@@ -1,19 +1,11 @@
-import { Stack, Container } from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
 
-import Navbar from '@/components/layout/Navbar'
-import Footer from '@/components/layout/Footer'
-
-const Page = () => {
+const Page = ({ children, header }) => {
 	return (
-		<Stack className='vw-100 vh-100'>
-			<Navbar />
-
-			<Stack className='py-4'>
-				<Outlet />
-			</Stack>
-
-			<Footer />
-		</Stack>
+		<Container>
+			<h1>{header}</h1>
+			{children}
+		</Container>
 	)
 }
 

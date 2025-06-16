@@ -1,11 +1,7 @@
-import { Container } from 'react-bootstrap'
+import Page from '@/components/layout/Page'
 
 const Home = () => {
-	return (
-		<Container>
-			<h1>Home</h1>
-		</Container>
-	)
+	return <Page header='Home'></Page>
 }
 
 export default Home
