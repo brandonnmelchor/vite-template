@@ -21,7 +21,6 @@ const _Navbar = () => {
 						<NavDropdown title='Dropdown'>
 							<NavDropdown.Item>Action</NavDropdown.Item>
 							<NavDropdown.Item>Action</NavDropdown.Item>
-							<NavDropdown.Item>Action</NavDropdown.Item>
 							<NavDropdown.Divider />
 							<NavDropdown.Item>Action</NavDropdown.Item>
 						</NavDropdown>
