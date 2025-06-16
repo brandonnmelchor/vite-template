@@ -7,7 +7,9 @@ const Page = () => {
 	return (
 		<Stack className='vw-100 vh-100'>
 			<Navbar />
-			{/* <Outlet /> */}
+			<Stack>
+				<Outlet />
+			</Stack>
 			<Footer />
 		</Stack>
 	)

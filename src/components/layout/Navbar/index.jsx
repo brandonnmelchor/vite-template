@@ -7,8 +7,8 @@ const _Navbar = () => {
 		<Navbar expand='sm' bg='primary' data-bs-theme='dark'>
 			<Container>
 				<Navbar.Brand className={`${styles.brand} d-flex justify-content-center align-items-center`}>
-					<img src='/logos/react.svg' className={`${styles.brand_logo} d-inline-block me-2`} />
-					<p className='d-inline-block m-0'>Template</p>
+					<img src='/logos/react.svg' className={`${styles.brand_logo} me-2 d-inline-block `} />
+					<p className='m-0 d-inline-block '>Template</p>
 				</Navbar.Brand>
 
 				<Navbar.Toggle />

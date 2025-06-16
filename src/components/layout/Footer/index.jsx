@@ -1,10 +1,14 @@
-import { Container, Navbar, Nav, NavDropdown } from 'react-bootstrap'
+import styles from './styles.module.scss'
+
+import { Container } from 'react-bootstrap'
 
 const Footer = () => {
 	return (
-		<Container className='bg-primary text-white' data-bs-theme='dark'>
-			test
-		</Container>
+		<div className='bg-secondary-subtle'>
+			<Container className={`${styles.footer}`}>
+				<p className='m-0 d-inline-block small'>Template</p>
+			</Container>
+		</div>
 	)
 }
 
