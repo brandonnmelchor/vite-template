@@ -1,5 +1,3 @@
-import styles from './styles'
-
 import reactLogo from '/logos/react.svg'
 import viteLogo from '/logos/react.svg'
 
